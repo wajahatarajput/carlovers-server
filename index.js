@@ -440,6 +440,6 @@ app.get("/yearapi", async (req, res) => {
 })
 
 
-app.listen(process.env.PORT, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log("Server is Listening on PORT : "+process.env.PORT);
 });
